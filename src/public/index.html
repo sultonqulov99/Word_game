@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="drusatmjonov0919@gmail.com">     
+    <title>Word game</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+    
+    <div class="app">
+        <div class="users">
+            <ul id="usersList" class="users-list">
+
+<!--                 <li class="users-list__item">
+                    <div class="user-img">
+                        <img src="./img/user.png">
+                    </div>
+                    <div class="user-name">
+                        Diyorbek
+                    </div>
+                    <div style="visibility: none" class="user-status active">
+                            turn
+                    </div>
+                </li > -->
+
+<!--                 <li class="users-list__item item-active">
+                    <div class="user-img">
+                        <img src="./img/user.png" width="45" alt="">
+                    </div>
+                    <div class="user-name">
+                        <span>
+                            Diyorbek
+                        </span>
+                    </div>
+                    <div class="user-status">
+                            offline
+                    </div>
+                </li > -->
+
+            </ul>
+        </div>
+        <div class="gamePlace">
+            <span style="color: red" id="messageText"></span>
+            <div class="selected-user">
+                <div class="selected-user__img">
+                    <img id="currentUserImg" src="./img/user.png" width="70" alt="">
+                </div>
+                <div id="currentUserUsername" class="selected-user__title">
+                    Diyorbek
+                </div>
+            </div>
+
+            <div class="word-form">
+                <input id="wordInput" type="text" class="word-input">
+            </div>
+
+            <div id="timer" class="word-timer">00:00</div>
+            <div class="latest_word">
+                Last word: <span id="lastWordEl">Applae</span>
+            </div>
+
+            <div class="next_player">
+                Next player: <span id="nextPlayer">Diyorbek 2</span>
+            </div>
+
+        </div>
+        <div class="game-controll">
+            <button id="startGameBtn" class="btn">
+                start game
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<script src="./js/util.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
